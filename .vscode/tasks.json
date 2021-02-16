@@ -9,10 +9,8 @@
             "type": "shell",
             "args": [
                 "build",
-                // Ask dotnet build to generate full paths for file names.
                 "${workspaceFolder}/src/customer-key-store/customerkeystore.csproj",
-                "/property:GenerateFullPaths=true",
-                // Do not generate summary otherwise it leads to duplicate errors in Problems panel
+                "/property:GenerateFullPaths=false",
                 "/consoleloggerparameters:NoSummary"
             ],
             "group": "build",
